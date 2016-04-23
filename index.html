@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+
+    <title>Sexual Assault Awareness Month</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom -->
+    <link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="header">
+      <div class="row">
+      <span><a href="http://aleahmhowell.com/api-project4/"><img class="center-img" src="images/hashtag2.png"></a></span>
+      </div>
+    </div>
+
+  <div class="container">
+
+          <!-- Mobile Menu -->
+          <div class="row" id="menu">
+              <div class="col-xs-12 hidden-sm hidden-md hidden-lg border tabs">
+                <a href="#twitterid" role="button" aria-controls="twitter" data-toggle="tab">Tweets</a>
+              </div>
+              <div class="col-xs-12 hidden-sm hidden-md hidden-lg border tabs">
+                <a href="#picturesid" role="button" aria-controls="pictures" data-toggle="tab">Photos</a>
+              </div>
+              <div class="col-xs-12 hidden-sm hidden-md hidden-lg border tabs">
+                <a href="#newsid" role="button" aria-controls="news" data-toggle="tab">News</a>
+              </div>
+              <div class="col-xs-12 hidden-sm hidden-md hidden-lg border tabs">
+                <a href="#mapid" role="button" aria-controls="map" data-toggle="tab">Map</a>
+              </div>
+          </div>
+
+    <div class="tab-content">
+
+        <div id="introid" class="tab-pane active">
+          <div class="row">
+              <div class="col-lg-2 col-md-2">
+              </div>
+              <div class="col-lg-8 col-md-8 col-sm-12 padding1">
+                <p><span class="headline">In the United States April is Sexual Assault Awareness Month (SAAM). The goal of SAAM is to raise public awareness about sexual violence and to educate communities on how to prevent it. Click on the tabs below to see how the nation is participating in #saam.</span></p>
+                <p><span class="trigger">Trigger Warning:</span> Content is not monitored or filtered. Images, tweets and articles come directly from Twitter, Instagram and The New York Times. </p>
+              </div>
+              <div class="col-lg-2 col-md-2">
+              </div>
+          </div>
+        </div>
+
+        <div id="twitterid" class="tab-pane">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="container-narrow padding2">
+                <h1>Recently tagged #30daysofsaam</h1>
+                <div id="twitter"><iframe src="twitter.php"></iframe></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="picturesid" class="tab-pane">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-8 col-xs-12 center" id="insta-box">
+                <div id="insta-wrap" class="padding2">
+                    <p>Recently tagged #30daysofsaam Instagram photos</p>
+                    <button class="insta-button" id="insta-back-button">Prev</button>
+                    <button class="insta-button" id="insta-button">Next</button>
+                    <div id="insta"></div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      <div id="newsid" class="tab-pane">
+        <div class="row">
+          <div class="col-lg-12" id="news">
+            <div class="container-narrow padding2">
+              <p> Latest New York Times stories on sexual assault prevention </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="mapid" class="tab-pane">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-md-8 col-lg-12 map-div">
+            <div class="container-narrow padding2">
+              <p>Find centers working to eliminate sexual violence</p>
+            </div>
+            <div class="map-p">
+              <p> This map shows North Carolina anti-sexual assault coalitions and allied organizations. For more resource centers, check out <a href="http://www.nsvrc.org/organizations">nsvrc.org</a></p>
+            </div>
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+  </div>
+
+  <div id="footer">
+    <div class="footer-container">
+      <div class="row">
+        <div class="hidden-xs hidden-sm col-md-4 tab-photo">
+          <a href="#introid" onclick="scroll(0,0)" role="button" aria-controls="news" data-toggle="tab"><img src="images/saam-logo-footer.png" class="img-responsive"></a>
+        </div>
+        <div class="hidden-xs col-sm-3 col-md-2 column-padding tabs">
+          <a href="#twitterid" role="button" aria-controls="news" data-toggle="tab">Tweets</a>
+        </div>
+        <div class="hidden-xs col-sm-3 col-md-2 column-padding tabs">
+          <a href="#picturesid" role="button" aria-controls="news" data-toggle="tab">Photos</a>
+        </div>
+        <div class="hidden-xs col-sm-3 col-md-2 column-padding tabs">
+          <a href="#newsid" role="button" aria-controls="news" data-toggle="tab">News</a>
+        </div>
+        <div class="hidden-xs col-sm-3 col-md-2 column-padding tabs">
+          <a href="#mapid" role="button" aria-controls="news" data-toggle="tab">Map</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Instagram -->
+  <script src="js/instagram.js" type="text/javascript"></script>
+  <!-- New York Times -->
+  <script src="js/news.js"></script>
+  <!-- Maps -->
+  <script src="js/maps.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSXoNN2rQOMsxtfVodmDaAEnfpIQbf0gE&callback=initMap"></script>
+  <!-- Custom -->
+  <script src="js/custom.js" type="text/javascript"></script>
+
+
+</body>
+
+</html>

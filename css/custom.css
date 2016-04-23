@@ -1,0 +1,410 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.center-img {
+    display: block;
+    margin: auto;
+    padding: 15px;
+}
+
+.trigger {
+  font-weight: bold;
+  color: #008c99;
+}
+
+.headline {
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.padding1 p {
+  margin: 20px 30px 30px 30px;
+  font-size: 1.1em;
+}
+
+.tabs a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  padding: 60px;
+}
+
+.tab-photo img {
+  max-width: 45%;
+  padding-left: 30px;
+  padding-top: 12px;
+  margin: auto;
+  display: block;
+}
+
+.tabs:hover {
+  background-color: #99D1D6;
+}
+
+.tabs:hover a {
+  color: #008c99;
+}
+
+.column-padding {
+  padding: 18px;
+  border-left: solid 2px #7FC5CC;
+}
+
+.border {
+  padding: 15px;
+  border-bottom: solid 2px #7FC5CC;
+}
+
+
+#footer {
+    position: fixed;
+    display: block;
+    width: 100%;
+    background: #008c99;
+    z-index: 9;
+    text-align: center;
+    color: #008B8F;
+    font-size: 12pt;
+    bottom: 0px;
+    font-family: "CooperHewitt", sans-serif;
+}
+
+#menu {
+    display: block;
+    background: #008c99;
+    z-index: 9;
+    text-align: center;
+    color: #008B8F;
+    font-size: 12pt;
+    bottom: 0px;
+    font-family: "CooperHewitt", sans-serif;
+}
+
+#twitter iframe {
+  width: 100%;
+  height: 500px;
+  border: 0px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.sectionname {
+  color: #ffaf35;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.newsheadline a {
+  color: #008B8F;
+  font-size: 1.3em;
+  font-weight: 800;
+}
+
+.newsheadline a:hover {
+  color: #99D1D6;
+  font-size: 1.3em;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+#newsid {
+  padding-bottom: 30px;
+}
+
+.byline {
+  color: #a1a1a1;
+  font-size: 12px;
+}
+
+.date {
+  color: #a1a1a1;
+  font-size: 12px;
+}
+
+.padding2 {
+  border-top: 2px solid #99D1D6;
+}
+
+.padding2 p {
+  font-size: 1.5em;
+  font-weight: 900;
+  color: #B8B8B8;
+  text-align: center;
+  padding-top: 1em;
+  text-transform: uppercase;
+}
+
+.center {
+  margin: auto;
+}
+
+#insta {
+    height: 475px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    margin-bottom: 8em;
+  }
+
+  #insta a {
+    font-weight: 800;
+    text-decoration: none;
+    color: #008B8F;
+  }
+
+  #insta a:hover {
+    font-weight: 800;
+    text-decoration: none;
+    color: #B8B8B8;
+  }
+
+#insta-wrap {
+    text-align: center;
+    height: 525px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.insta-caption {
+  width: 100%;
+  background-color: #dbdbdb;
+  color: black;
+  padding: 1em;
+  text-align: left;
+}
+
+.insta-button {
+    background-color: #99D1D6;
+    color: white;
+    text-decoration: none;
+    text-shadow: none;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-top: 5px;
+    text-transform: uppercase;
+    border-radius: 1px;
+    margin-bottom: 1.5em;
+    outline: none;
+  }
+
+  .insta-button:hover {
+    text-decoration: none;
+    outline: none;
+    background-color: #008B8F;
+  }
+
+.insta-div {
+    display: inline-block;
+    white-space: normal;
+    margin-right: 15px;
+    margin-left: 15px;
+    vertical-align: top;
+    background-color: #f0f0f0;
+    border: 2px solid #dbdbdb;
+  }
+
+  .profile-pic {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    float: left;
+    margin: 10px;
+    margin-top: none;
+  }
+
+  .padding2 .username {
+    padding-top: 15px;
+    color: #008B8F;
+    font-weight: bold;
+    text-align: left;
+    float: left;
+    margin-left: 0px;
+    font-family: Helvetica, sans-serif;
+    text-transform: lowercase;
+  }
+
+  .padding2 .username:hover {
+    color: gray;
+  }
+
+  .map-div {
+    width: 100%;
+    height: 100%;
+  }
+
+  #mapid {
+    height: 500px;
+  }
+
+  #map {
+    height: 400px;
+  }
+
+  .map-p {
+    text-align: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: gray;
+    padding-bottom: 1em;
+  }
+
+  .map-p a {
+    text-align: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: #008B8F;
+    text-decoration: none;
+  }
+
+  .map-p a:hover {
+    text-align: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: #99D1D6;
+    text-decoration: none;
+  }
+
+/******************************* RESPONSIVE *******************************/
+
+  /* Desktop Portrait and Landscape */
+  @media screen
+    and (min-width: 1000px)
+    and (max-width: 1600px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+
+      #newsid {
+        padding-bottom: 10em;
+        margin-left: 12em;
+        margin-right: 12em;
+      }
+
+      .insta-div {
+        max-width: 30%;
+        height: auto;
+      }
+  }
+
+
+/* iPhone 6 Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .headline {
+      font-size: 1.25em;
+      text-align: center;
+    }
+
+    .padding1 p {
+      margin: 30px 25px 30px 25px;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .padding2 {
+      border-top: 0px solid #99D1D6;
+      font-size: 13px;
+      padding-top: 1em;
+    }
+
+    #newsid {
+      padding-bottom: 30px;
+      border-bottom: 2px solid #99D1D6;
+      margin-bottom: 2em;
+    }
+
+    #news {
+      padding-right: 2em;
+      padding-left: 2em;
+    }
+
+    .insta-button {
+        background-color: #99D1D6;
+        color: white;
+        text-decoration: none;
+        text-shadow: none;
+        border: none;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 10px;
+        padding-bottom: 7px;
+        text-transform: uppercase;
+        border-radius: 1px;
+        margin-bottom: 1.5em;
+        margin-top: 1em;
+        outline: none;
+        font-size: 1.3em;
+      }
+
+      .insta-button:hover {
+        text-decoration: none;
+        outline: none;
+        background-color: #008B8F;
+      }
+
+      #insta {
+          margin-bottom: .5em;
+        }
+
+}
+
+/* iPhone 5 */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .padding2 {
+      border-top: 0px;
+    }
+
+    #insta {
+        margin-bottom: .5em;
+      }
+
+    .padding1 p {
+    margin: 20px 10px 10px 10px;
+    font-size: 1em;
+    }
+
+}
+
+/* iPad Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    #newsid {
+      padding-bottom: 8em;
+      margin-left: 7em;
+      margin-right: 7em;
+    }
+
+    .column-padding {
+      border-left: solid 2px #7FC5CC;
+    }
+
+    #insta-box {
+      width: 80%;
+      height: auto;
+      padding-left: 15em;
+    }
+
+}
