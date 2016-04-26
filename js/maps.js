@@ -22,12 +22,16 @@ map = new google.maps.Map(document.getElementById('map'), {
   mapTypeId: google.maps.MapTypeId.ROADMAP
 });
 
-// this is our gem
+
 google.maps.event.addDomListener(window, "resize", function() {
     var center = map.getCenter();
     google.maps.event.trigger(map, "resize");
     map.setCenter(center);
 });
+
+// google.maps.event.addDomListener(map, 'idle', function() {
+//    updateMap();
+//    });
 
 var marker = new google.maps.Marker({
   position: myLatLng1,

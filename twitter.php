@@ -1,3 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api twitter php</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700,300,400' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/tweetLinkIt.js"></script>
+
+    <script>
+    $('.twittertext').tweetLinkify();
+
+    function pageComplete(){
+            $('.twittertext').tweetLinkify();
+            console.log('pagecomplete');
+        }
+
+    </script>
+
+</head>
+
+<body>
 
 <?php
 ini_set('display_errors', 1);
@@ -31,32 +56,47 @@ $settings = array(
 /** Note: Set the GET field BEFORE calling buildOauth(); **/
 
 $url = 'https://api.twitter.com/1.1/search/tweets.json';
-// $getfield = '?q=%23sexualassaultawareness';
 $getfield = '?q=#saam+OR+#30daysofsaam+OR+#sexualassaultawareness';
 $requestMethod = 'GET';
 $twitter = new TwitterAPIExchange($settings);
 // echo $twitter->setGetfield($getfield)
 //              ->buildOauth($url, $requestMethod)
 //              ->performRequest();
-
-
 $tweetData = json_decode($twitter->setGetfield($getfield)
               ->buildOauth($url, $requestMethod)
               ->performRequest(), $assoc = TRUE);
 
+foreach($tweetData['statuses'] as $tweet){
+  $entitiesArray = $tweet['entities'];
 
-foreach($tweetData['statuses'] as $items){
-  $entitiesArray = $items['entities'];
-  echo "<div class='tweets'>Tweet: " . $items['text'] . "</div>";
-  echo "Where: " . $items['location'] . "<br>";
-  echo "When: " . $items['created_at'] . "<br>";
+  echo "<div class='twitteruserphoto'><a href='http://twitter.com/" . $tweet['user']['screen_name'] . "' target='_blank'><img class='twitter-profilepictures' src='" . $tweet['user']['profile_image_url'] . "'/></a></div>";
+  // echo "<div class='twittername'>" . $tweet['user']['name'] . "</div>";
+  // echo "<div class='twitteruser'>@" . $tweet['user']['screen_name'] . "</div>";
+  // echo "<div class='twittertext'>Tweet:" . $tweet['text'] . "</div>";
+  echo "<div class='twitter-info'><span class='twittername'>" . $tweet['user']['name'] . " </span>";
+  echo "<span class='twitteruser'>@" . $tweet['user']['screen_name'];
+  echo "</span><p class='twittertext'>" . $tweet['text'] . "</p></div></div>";
 
   if (isset($entitiesArray['media'])) {
     $mediaArray = $entitiesArray['media'];
     $tweetMedia = $mediaArray[0];
-    echo "<a target='_blank' href='" . $tweetMedia['expanded_url'] . "'><img target='_blank' src='" . $tweetMedia ['media_url'] . "'></a>";
+    echo "<a target='_blank' href='" . $tweetMedia['expanded_url'] . "'><img class='twitter-pic' target='_blank' src='" . $tweetMedia['media_url'] . "'></a>";
   }
+
+  echo "<div class='twitterline' style='width:100% height:1px'></div>";
+
+
+
+
+  echo "<script>pageComplete();</script>";
 
 }
 
 ?>
+
+<!-- javacript -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
