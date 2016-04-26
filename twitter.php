@@ -86,8 +86,6 @@ foreach($tweetData['statuses'] as $tweet){
   echo "<div class='twitterline' style='width:100% height:1px'></div>";
 
 
-
-
   echo "<script>pageComplete();</script>";
 
 }
